@@ -1,3 +1,6 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>남동탄 JLS 신입생 안내</title>
 <meta name="description" content="남동탄 정상어학원 신입생 학부모·학생 안내">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -310,7 +313,17 @@ ol.steps li .shot{margin-top:10px}
 .lightbox img{max-width:none;width:auto;height:auto;max-height:none;min-width:100%;border-radius:8px;background:#fff}
 @media (min-width:700px){.lightbox img{min-width:0;max-width:96vw;max-height:88vh}}
 .lightbox button{position:fixed;top:calc(env(safe-area-inset-top,0px) + 10px);right:12px;width:40px;height:40px;border-radius:50%;border:0;background:#fff;color:#0B2358;font-size:22px;cursor:pointer}
+.clue{display:inline-block;margin-left:4px;font-size:12px;font-weight:700;background:var(--alert);color:#fff;border-radius:999px;padding:1px 8px;vertical-align:1px}
 @media (prefers-reduced-motion:reduce){.fold-ctrl button.nudge,.fold-hint svg,.col.pop{animation:none}}
+
+@media (max-width:480px){
+  .wrap{padding-inline:12px}
+  .sec{padding:28px 16px 20px}
+  .sec::before,.sec::after{left:16px;right:16px}
+  body{font-size:16.5px}
+  .sec>p,ol.steps li small,.camp-lv p,.bb-cap,.att-row{font-size:15.5px}
+  ul.grid2 li,.note{font-size:15.5px}
+}
 
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -681,8 +694,8 @@ ol.steps li .shot{margin-top:10px}
     <h3>확인받을 것 (택1)</h3>
     <ul class="grid2"><li>공책 4칸 Self-test</li><li>담임선생님 프린트</li><li>별도 학습자료</li><li>오답 정리</li></ul>
     <h3>문인시 재시험은 준비 방법이 달라요</h3>
-    <ol class="chips"><li><b>학습자료 풀기</b></li><li><b>채점</b></li><li><b>틀린 문제 확인</b></li><li><b>오답 정리</b></li><li><b>재시험</b></li></ol>
-    <p style="margin:8px 0 0;color:var(--ink-2)">담임선생님이 준 학습자료로 준비합니다.</p>
+    <ol class="chips"><li><b>학습자료 풀기 <span class="clue">clue 표시!</span></b></li><li><b>채점</b></li><li><b>틀린 문제 확인</b></li><li><b>오답 정리</b></li><li><b>재시험</b></li></ol>
+    <p style="margin:8px 0 0;color:var(--ink-2)">담임선생님이 준 학습자료로 준비합니다. 문제를 풀 때는 <b style="color:var(--alert)">답의 근거(clue)를 꼭 표시</b>하세요.</p>
   </div>
 
   <div class="sec">
